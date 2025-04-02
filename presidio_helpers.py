@@ -41,7 +41,7 @@ def nlp_engine_and_registry(
         return create_nlp_engine_with_stanza(model_path)
     elif "flair" in model_family.lower():
         return create_nlp_engine_with_flair(model_path)
-    elif "huggingface" in model_family.lower():
+    elif "huggingface" | "obi" in model_family.lower():
         return create_nlp_engine_with_transformers(model_path)
     else:
         raise ValueError(f"Model family {model_family} not supported")

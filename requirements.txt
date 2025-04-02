@@ -1,0 +1,8 @@
+presidio_analyzer[transformers]
+presidio_analyzer[stanza]
+flair
+stanza
+pandas
+torch
+transformers
+presidio-anonymizer
